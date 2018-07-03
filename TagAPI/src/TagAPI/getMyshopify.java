@@ -15,7 +15,7 @@ public class getMyshopify {
      }
 	   
 public static void call_me() throws Exception {
-     String url = "https://470c6de20333b5ff1d6d7aa74bd0caa0:69de03384b8f815663efaa69ad723a81@keliang.myshopify.com/admin/shop.json";
+     String url = "https://470c6de20333b5ff1d6d7aa74bd0caa0:69de03384b8f815663efaa69ad723a81@keliang.myshopify.com/admin/orders.json";
      URL obj = new URL(url);
      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
      // optional default is GET
