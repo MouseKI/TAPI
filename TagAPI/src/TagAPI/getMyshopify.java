@@ -15,7 +15,7 @@ public class getMyshopify {
      }
 	   
 public static void call_me() throws Exception {
-     String url = "https://470c6de20333b5ff1d6d7aa74bd0caa0:69de03384b8f815663efaa69ad723a81@keliang.myshopify.com/admin/products.json?limit=250&page=1";
+     String url = "https://470c6de20333b5ff1d6d7aa74bd0caa0:69de03384b8f815663efaa69ad723a81@keliang.myshopify.com/admin/shop.json";
      URL obj = new URL(url);
      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
      // optional default is GET
@@ -25,8 +25,7 @@ public static void call_me() throws Exception {
      int responseCode = con.getResponseCode();
      System.out.println("\nSending 'GET' request to URL : " + url);
      System.out.println("Response Code : " + responseCode);
-     BufferedReader in = new BufferedReader(
-             new InputStreamReader(con.getInputStream()));
+     BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
      String inputLine;
      StringBuffer response = new StringBuffer();
      while ((inputLine = in.readLine()) != null) {
